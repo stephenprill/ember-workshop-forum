@@ -18,7 +18,7 @@ Forum.reopenClass({
     id: 2,
     name: 'When Harry Met Sally',
     info: 'Talk about best movie ever made, No haters',
-    topics: [1,4]
+    topics: [2,3]
   }
   ]
 });
