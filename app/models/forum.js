@@ -21,7 +21,4 @@ Forum.reopenClass({
     topics: [1,4]
   }
   ]
-})
-
-
 });

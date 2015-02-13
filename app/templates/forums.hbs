@@ -1,1 +1,23 @@
-{{outlet}}
+
+<table class="table">
+  <tr>
+    <th class="col col-sm-4">
+      <h3>Forums</h3>
+    </th>
+    <th class="col col-sm-4">
+      <h3>Topics</h3>
+    </th>
+  </tr>
+
+  <tr>
+    <td>
+      {{#each forum in model}}
+      <h3>{{#link-to 'forum' forum}}{{forum.name}}{{/link-to}}</h3>
+    </td>
+    {{/each}}
+    <td>
+      {{outlet}}
+    </td>
+  </tr>
+
+</table>
