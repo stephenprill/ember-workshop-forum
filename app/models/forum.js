@@ -22,3 +22,5 @@ Forum.reopenClass({
   }
   ]
 });
+
+export default Forum;
