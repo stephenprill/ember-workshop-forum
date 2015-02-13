@@ -6,6 +6,9 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.resource("forums", function() {
+    this.resource("topic", {path: '/:forum_id'});
+  });
 });
 
 export default Router;
