@@ -1,0 +1,14 @@
+<h1>{{username}}</h1>
+<h6>Topic:
+  {{#each topic in topics}}
+
+      {{topic.name}}
+
+  {{/each}}
+</h6>
+
+<h6>Message:
+  {{#each message in messages}}
+      {{message.text}}
+  {{/each}}
+</h6>

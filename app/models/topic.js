@@ -4,7 +4,8 @@ var Topic = DS.Model.extend({
   name: DS.attr('string'),
   description: DS.attr('string'),
   user: DS.belongsTo('user', {async: true} ),
-  messages: DS.hasMany('message', {async: true})
+  messages: DS.hasMany('message', {async: true}),
+  forum: DS.belongsTo('forum', {async: true})
 });
 
 Topic.reopenClass({

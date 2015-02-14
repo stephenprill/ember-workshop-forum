@@ -1,0 +1,12 @@
+<div class="container">
+
+<h2>{{name}}</h2>
+
+<h4>Messages</h4>
+{{#each message in messages}}
+<h5>{{message.text}}</h5>
+<p>from:
+  {{#link-to 'user' message.user}}{{message.user.username}}{{/link-to}}
+</p>
+{{/each}}
+</div>

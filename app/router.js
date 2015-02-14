@@ -9,6 +9,12 @@ Router.map(function() {
   this.resource("forums", function() {
     this.resource("forum", {path: '/:forum_id'});
   });
+  this.resource("topics", function() {
+    this.resource("topic", {path: '/:topic_id'});
+  });
+  this.resource("users", function() {
+    this.resource("user", {path: '/:user_id'});
+  });
 });
 
 export default Router;

@@ -1,1 +1,6 @@
 
+{{#each topic in topics}}
+<h3>{{#link-to 'topic' topic}}
+  {{topic.name}}  </h3>
+  {{/link-to}}
+{{/each}}
